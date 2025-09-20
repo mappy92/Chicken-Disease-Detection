@@ -44,3 +44,74 @@ stages:
       md5: a8b9fb1e0bc5984677eefdfcd009d9aa.dir
       size: 118073233
       nfiles: 2
+  training:
+    cmd: python src/cnnClassifier/pipeline/stage_03_training.py
+    deps:
+    - path: artifacts/data_ingestion/Chicken-fecal-images
+      hash: md5
+      md5: 9e1f8dd2eae3c29e9d635df89d438ae4.dir
+      size: 12207807
+      nfiles: 390
+    - path: artifacts/prepare_base_model
+      hash: md5
+      md5: a8b9fb1e0bc5984677eefdfcd009d9aa.dir
+      size: 118073233
+      nfiles: 2
+    - path: config/config.yaml
+      hash: md5
+      md5: 7b4ebd9f18adabc7482871f6fdde949a
+      size: 825
+    - path: src/cnnClassifier/components/prepare_callbacks.py
+      hash: md5
+      md5: 54250f7714f0f3c8dfb43babd7a8fef0
+      size: 1043
+    - path: src/cnnClassifier/pipeline/stage_03_training.py
+      hash: md5
+      md5: 7e08d6859f8915c3527ae5e20729b6cd
+      size: 1256
+    params:
+      params.yaml:
+        AUGMENTATION: true
+        BATCH_SIZE: 16
+        EPOCHS: 1
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+    outs:
+    - path: artifacts/training/model.keras
+      hash: md5
+      md5: 60a162846832954665212d6cda07e624
+      size: 59141250
+  evaluation:
+    cmd: python src/cnnClassifier/pipeline/stage_04_evaluation.py
+    deps:
+    - path: artifacts/data_ingestion/Chicken-fecal-images
+      hash: md5
+      md5: 9e1f8dd2eae3c29e9d635df89d438ae4.dir
+      size: 12207807
+      nfiles: 390
+    - path: artifacts/training/model.keras
+      hash: md5
+      md5: 60a162846832954665212d6cda07e624
+      size: 59141250
+    - path: config/config.yaml
+      hash: md5
+      md5: 7b4ebd9f18adabc7482871f6fdde949a
+      size: 825
+    - path: src/cnnClassifier/pipeline/stage_04_evaluation.py
+      hash: md5
+      md5: a6ccbafa1b925148ab5a5024c67f141f
+      size: 875
+    params:
+      params.yaml:
+        BATCH_SIZE: 16
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+    outs:
+    - path: scores.json
+      hash: md5
+      md5: 1fb30dfac51b822854eddec444b55ffa
+      size: 57
