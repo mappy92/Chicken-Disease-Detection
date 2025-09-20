@@ -207,3 +207,8 @@ marimo/_lsp/
 __marimo__/
 /artifacts/data_ingestion/Chicken-fecal-images/Healthy
 /artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis
+artifacts/prepare_base_model/base_model.keras
+artifacts/prepare_base_model/base_model_updated.keras
+artifacts/prepare_base_model/base_model.h5
+artifacts/prepare_callbacks/checkpoint_dir/model.keras
+/artifacts/prepare_callbacks/tensorboard_log_dir
