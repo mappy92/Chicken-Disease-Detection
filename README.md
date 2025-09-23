@@ -138,7 +138,7 @@ open up you local host and port
 
 ## Save pass:
 
-passowrd from azure portal
+password from azure portal
 
 
 ## Run from terminal:
