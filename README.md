@@ -3,7 +3,6 @@
 [![Machine Learning](https://img.shields.io/badge/Machine%20Learning-102230?style=for-the-badge&logo=TensorFlow&logoColor=orange)](https://en.wikipedia.org/wiki/Machine_learning)
 [![Deep Learning](https://img.shields.io/badge/Deep%20Learning-FF6F00?style=for-the-badge&logo=Keras&logoColor=white)](https://keras.io/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
-[![OpenCV](https://img.shields.io/badge/OpenCV-27338E?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
 [![DVC](https://img.shields.io/badge/DVC-13ADC7?style=for-the-badge&logo=dataversioncontrol&logoColor=white)](https://dvc.org/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
