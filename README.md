@@ -18,7 +18,7 @@
 4. Project Description
 5. Folder Structure
 6. Flow Diagram
-7. Dashboards & Visualizations
+7. Demo Video
 8. Output
 9. How to Run & Dependencies
 10. Contribution Guidelines
@@ -90,7 +90,10 @@ Data Ingestion → Preprocessing → Base Model Preparation → Training → Eva
 
 ---
 
-## Dashboards & Visualizations
+## Demo Video
+![Demo Preview](./Demo.gif)
+
+
 
 ---
 
